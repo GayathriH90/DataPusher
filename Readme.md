@@ -24,14 +24,14 @@
 	- Routes data to appropriate destinations based on account. 
 
 ## Features 
-	- **CRUD Operations:** 
-		- Create, read, update, and delete operations for both accounts and destinations. 
-	- **Dynamic Routing:** 
-		- Sends data to destinations based on configured HTTP methods. 
-	- **Secure Communication:** 
-		- Validates requests using secret tokens. 
-	- **Data Integrity:** 
-		- Ensures data integrity and format compliance. 
+
+**CRUD Operations:** Create, read, update, and delete operations for both accounts and destinations. 
+
+**Dynamic Routing:** Sends data to destinations based on configured HTTP methods. 
+
+**Secure Communication:** Validates requests using secret tokens. 
+
+**Data Integrity:** Ensures data integrity and format compliance. 
 
 ## Installation and Setup 
 
@@ -55,9 +55,9 @@
 	- Incoming Data API: '/server/incoming_data/' 
 
 ## Usage 
-	- **Creating Accounts and Destinations:** 
-	- Use the provided APIs or Django admin interface. 
-	- **Sending Data:** 
-		- POST JSON data to '/server/incoming_data/' with 'CL-X-TOKEN' header containing the 'APP_SECRET_TOKEN'.
-	- **Managing Data Destinations:** 
-	- Associate destinations with accounts to route data based on HTTP methods.
+
+**Creating Accounts and Destinations:** Use the provided APIs or Django admin interface. 
+
+**Sending Data:**  POST JSON data to '/server/incoming_data/' with 'CL-X-TOKEN' header containing the 'APP_SECRET_TOKEN'.
+
+**Managing Data Destinations:**  Associate destinations with accounts to route data based on HTTP methods.
