@@ -53,6 +53,10 @@ Body:
 
 send the notification to the accounts(incoming_data)
 --------------------------------------
+
+URL: http://127.0.0.1:8000/api/server/incoming_data/
+Method: Post
+
 CL-X-TOKEN-- [{"key":"CL-X-TOKEN","value":"6NbYr9yba5LGrTrsIxnOAPptqryzoZzc4impt8mYQvFwHcrA6T","description":"","type":"default","enabled":true}]
 
 Body
