@@ -1,0 +1,65 @@
+To Create an Account
+-----------------------
+URL: http://127.0.0.1:8000/api/accounts/
+Method: Post
+Body: {
+    "email": "gayathrihari417@gmail.com",
+    "account_name": "Dev1",
+    "website": "http://google.com"
+}
+
+Output:201Created
+Body: {
+    "email": "gayathrihari1417@gmail.com",
+    "account_id": 4,
+    "account_name": "Dev1",
+    "app_secret_token": "icG50SfJTxxDsqNa6y5a2oT0uPbRDMtdecT0c2Shv48EXrw101",
+    "website": "http://google.com"
+}
+
+To Create an Destination
+-------------------------
+URL: http://127.0.0.1:8000/api/destinations/
+Method: Post
+Body: 
+{ "account": 4,
+"url": "http://127.0.0.1:8081/api/",
+"http_method" : "POST",
+"headers" : {
+    "APP_ID": "TESTAPP1",
+    "APP_SECRET": "icG50SfJTxxDsqNa6y5a2oT0uPbRDMtdecT0c2Shv48EXrw101",
+    "ACTTION": "user.update",
+    "Content-Type": "application/json",
+    "Accept": "*"
+}
+}
+
+Destination Output
+------------------
+Status: 201Created
+Body:
+ {
+    "account": 4,
+    "url": "http://127.0.0.1:8081/api/",
+    "http_method": "POST",
+    "headers": {
+        "APP_ID": "TESTAPP1",
+        "APP_SECRET": "enwdj3bshwer43bjhjs9ereuinkjcnsiurew8s",
+        "ACTTION": "user.update",
+        "Content-Type": "application/json",
+        "Accept": "*"
+    }
+}
+
+send the notification to the accounts(incoming_data)
+--------------------------------------
+CL-X-TOKEN-- [{"key":"CL-X-TOKEN","value":"6NbYr9yba5LGrTrsIxnOAPptqryzoZzc4impt8mYQvFwHcrA6T","description":"","type":"default","enabled":true}]
+
+Body
+-----
+{
+    "user_id" : "12345",
+    "name" : "Gayathri",
+    "email" : "gayathrihari1417@gmail.com",
+    "action": "update"
+}
